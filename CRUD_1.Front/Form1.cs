@@ -38,7 +38,7 @@ namespace CRUD_1.Front
         }
         private void Limpiar()
         {
-            //limpia los campos
+            
             txtCodigo.Text = "";
             txtNombre.Text = "";
             txtPrecio.Text = "";
