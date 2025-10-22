@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btAgregar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -36,42 +37,52 @@
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtPrecio = new System.Windows.Forms.TextBox();
             this.lblSalida = new System.Windows.Forms.Label();
+            this.btVer = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btAgregar
             // 
-            this.btAgregar.Location = new System.Drawing.Point(498, 84);
+            this.btAgregar.BackColor = System.Drawing.Color.BurlyWood;
+            this.btAgregar.Font = new System.Drawing.Font("Tw Cen MT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btAgregar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btAgregar.Location = new System.Drawing.Point(499, 84);
             this.btAgregar.Name = "btAgregar";
-            this.btAgregar.Size = new System.Drawing.Size(101, 29);
+            this.btAgregar.Size = new System.Drawing.Size(130, 29);
             this.btAgregar.TabIndex = 0;
             this.btAgregar.Text = "AGREGAR";
-            this.btAgregar.UseVisualStyleBackColor = true;
+            this.btAgregar.UseVisualStyleBackColor = false;
             this.btAgregar.Click += new System.EventHandler(this.btAgregar_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.BurlyWood;
+            this.label1.Font = new System.Drawing.Font("Tw Cen MT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(12, 60);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 16);
+            this.label1.Size = new System.Drawing.Size(59, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "Codigo";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.BurlyWood;
+            this.label2.Font = new System.Drawing.Font("Tw Cen MT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(187, 60);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(134, 16);
+            this.label2.Size = new System.Drawing.Size(157, 20);
             this.label2.TabIndex = 2;
             this.label2.Text = "Nombre del producto";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.BurlyWood;
+            this.label3.Font = new System.Drawing.Font("Tw Cen MT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(379, 60);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 16);
+            this.label3.Size = new System.Drawing.Size(51, 20);
             this.label3.TabIndex = 3;
             this.label3.Text = "Precio";
             // 
@@ -102,17 +113,33 @@
             // lblSalida
             // 
             this.lblSalida.AutoSize = true;
+            this.lblSalida.BackColor = System.Drawing.Color.BurlyWood;
+            this.lblSalida.Font = new System.Drawing.Font("Tw Cen MT", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSalida.Location = new System.Drawing.Point(12, 132);
             this.lblSalida.Name = "lblSalida";
-            this.lblSalida.Size = new System.Drawing.Size(99, 16);
+            this.lblSalida.Size = new System.Drawing.Size(154, 27);
             this.lblSalida.TabIndex = 7;
             this.lblSalida.Text = "Lista Productos";
+            // 
+            // btVer
+            // 
+            this.btVer.BackColor = System.Drawing.Color.BurlyWood;
+            this.btVer.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btVer.ForeColor = System.Drawing.Color.Black;
+            this.btVer.Location = new System.Drawing.Point(499, 119);
+            this.btVer.Name = "btVer";
+            this.btVer.Size = new System.Drawing.Size(130, 35);
+            this.btVer.TabIndex = 8;
+            this.btVer.Text = "CARRITO";
+            this.btVer.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(651, 450);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(963, 372);
+            this.Controls.Add(this.btVer);
             this.Controls.Add(this.lblSalida);
             this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.txtNombre);
@@ -123,6 +150,7 @@
             this.Controls.Add(this.btAgregar);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -138,6 +166,7 @@
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtPrecio;
         private System.Windows.Forms.Label lblSalida;
+        private System.Windows.Forms.Button btVer;
     }
 }
 

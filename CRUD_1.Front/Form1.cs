@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CRUD_1.Back;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,10 +20,32 @@ namespace CRUD_1.Front
 
         private void btAgregar_Click(object sender, EventArgs e)
         {
-            lblSalida.Text = lblSalida.Text + "\r\n"
-                                            + " - " + txtNombre.Text
-                                            + " - " + txtCodigo.Text
-                                            + " - " + txtPrecio.Text;        
+            Producto prod = new Producto();
+
+            prod.Codigo = txtCodigo.Text;
+            prod.Nombre = txtNombre.Text;
+            prod.Precio = int.Parse(txtPrecio.Text);
+
+
+            //lblSalida.Text = lblSalida.Text + "\r\n"
+            //                                + " - " + txtNombre.Text
+            //                                + " - " + txtCodigo.Text
+            //                                + " - " + txtPrecio.Text;
+
+            lblSalida.Text = lblSalida.Text + "\r\n" + prod.Descripcion();
+            Limpiar();
+
+        }
+        private void Limpiar()
+        {
+            txtCodigo.Text = "";
+            txtNombre.Text = "";
+            txtPrecio.Text = "";
+            txtCodigo.Focus();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
 
         }
     }

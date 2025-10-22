@@ -79,5 +79,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CRUD_1.Back\CRUD_1.Back.csproj">
+      <Project>{4981094f-4720-42b7-bcfa-f30bd87324bd}</Project>
+      <Name>CRUD_1.Back</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

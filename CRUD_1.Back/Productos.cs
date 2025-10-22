@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CRUD_1.Back
 {
-    public class Class1
+    public class Productos
     {
     }
 }
