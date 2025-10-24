@@ -36,7 +36,7 @@
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtPrecio = new System.Windows.Forms.TextBox();
-            this.btVer = new System.Windows.Forms.Button();
+            this.btCarrito = new System.Windows.Forms.Button();
             this.btVaciar = new System.Windows.Forms.Button();
             this.DGV = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.DGV)).BeginInit();
@@ -112,18 +112,18 @@
             this.txtPrecio.Size = new System.Drawing.Size(100, 29);
             this.txtPrecio.TabIndex = 6;
             // 
-            // btVer
+            // btCarrito
             // 
-            this.btVer.BackColor = System.Drawing.Color.BurlyWood;
-            this.btVer.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btVer.ForeColor = System.Drawing.Color.Black;
-            this.btVer.Image = ((System.Drawing.Image)(resources.GetObject("btVer.Image")));
-            this.btVer.Location = new System.Drawing.Point(499, 151);
-            this.btVer.Name = "btVer";
-            this.btVer.Size = new System.Drawing.Size(130, 66);
-            this.btVer.TabIndex = 8;
-            this.btVer.UseVisualStyleBackColor = false;
-            this.btVer.Click += new System.EventHandler(this.btVer_Click);
+            this.btCarrito.BackColor = System.Drawing.Color.BurlyWood;
+            this.btCarrito.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btCarrito.ForeColor = System.Drawing.Color.Black;
+            this.btCarrito.Image = ((System.Drawing.Image)(resources.GetObject("btCarrito.Image")));
+            this.btCarrito.Location = new System.Drawing.Point(499, 151);
+            this.btCarrito.Name = "btCarrito";
+            this.btCarrito.Size = new System.Drawing.Size(130, 66);
+            this.btCarrito.TabIndex = 8;
+            this.btCarrito.UseVisualStyleBackColor = false;
+            this.btCarrito.Click += new System.EventHandler(this.btCarrito_Click);
             // 
             // btVaciar
             // 
@@ -148,16 +148,18 @@
             this.DGV.RowTemplate.Height = 24;
             this.DGV.Size = new System.Drawing.Size(464, 162);
             this.DGV.TabIndex = 10;
+            
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(963, 372);
             this.Controls.Add(this.DGV);
             this.Controls.Add(this.btVaciar);
-            this.Controls.Add(this.btVer);
+            this.Controls.Add(this.btCarrito);
             this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.txtCodigo);
@@ -167,7 +169,7 @@
             this.Controls.Add(this.btAgregar);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            
             ((System.ComponentModel.ISupportInitialize)(this.DGV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -183,7 +185,7 @@
         private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtPrecio;
-        private System.Windows.Forms.Button btVer;
+        private System.Windows.Forms.Button btCarrito;
         private System.Windows.Forms.Button btVaciar;
         private System.Windows.Forms.DataGridView DGV;
     }

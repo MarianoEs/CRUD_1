@@ -43,62 +43,26 @@ namespace CRUD_1.Front
             txtCodigo.Text = "";
             txtNombre.Text = "";
             txtPrecio.Text = "";
+            
 
             txtCodigo.Focus();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-      
-        }
+        
 
         public void btVaciar_Click(object sender, EventArgs e)
         {
-            //DGV.Rows.Clear();
-            //this.Producto.Clear();
-            //this.DGV.DataSource = this.Producto;
-
-            // Pide confirmación al usuario antes de vaciar
-
-            DialogResult resultado = MessageBox.Show(
-                "¿Estás seguro de que quieres vaciar el DataGridView y el archivo XML?",
-                "Confirmación",
-                MessageBoxButtons.YesNo,
-                MessageBoxIcon.Question
-            );
-
-            if (resultado == DialogResult.Yes)
-            {
-
-                Vaciar();
-
-                // Paso 1: Desvincula el DataGridView
-                //DGV.DataSource = null;
-
-                // Paso 2: Limpia los datos del DataSet subyacente
-                //if (Producto.Lista.Count > 0)
-                //{
-                //    Producto.Lista.Clear();
-                //}
-
-                // Paso 3: Guarda el DataSet vacío en el archivo XML
-               // try
-                //{
-                //    Lista.WriteXml("Productos.xml");
-                //    MessageBox.Show("El DataGridView y el archivo XML han sido vaciados exitosamente.");
-                //}
-                //catch (Exception ex)
-                //{
-               //     MessageBox.Show("Error al guardar el archivo XML: " + ex.Message);
-               // }
-            }
+            
         }
 
-        private void btVer_Click(object sender, EventArgs e)
-        {
-            
+        
 
-           
+        
+
+        private void btCarrito_Click(object sender, EventArgs e)
+        {
+            Carrito carritoForm = new Carrito();
+            carritoForm.Show();
         }
     }
 }
