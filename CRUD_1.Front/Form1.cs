@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Text;
 using System.Linq;
 using System.Reflection.Emit;
 using System.Text;
@@ -18,6 +19,7 @@ namespace CRUD_1.Front
 
 
         private Productos productos = new Productos();
+
 
         public Form1()
         {
@@ -52,7 +54,7 @@ namespace CRUD_1.Front
 
         public void btVaciar_Click(object sender, EventArgs e)
         {
-            
+            productos.Vaciar (null);
         }
 
         
@@ -61,7 +63,9 @@ namespace CRUD_1.Front
 
         private void btCarrito_Click(object sender, EventArgs e)
         {
-            Carrito carritoForm = new Carrito();
+            
+
+            Carrito carritoForm = new Carrito (productos);
             carritoForm.Show();
         }
     }

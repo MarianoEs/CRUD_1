@@ -118,9 +118,9 @@
             this.btCarrito.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btCarrito.ForeColor = System.Drawing.Color.Black;
             this.btCarrito.Image = ((System.Drawing.Image)(resources.GetObject("btCarrito.Image")));
-            this.btCarrito.Location = new System.Drawing.Point(499, 151);
+            this.btCarrito.Location = new System.Drawing.Point(499, 148);
             this.btCarrito.Name = "btCarrito";
-            this.btCarrito.Size = new System.Drawing.Size(130, 66);
+            this.btCarrito.Size = new System.Drawing.Size(130, 72);
             this.btCarrito.TabIndex = 8;
             this.btCarrito.UseVisualStyleBackColor = false;
             this.btCarrito.Click += new System.EventHandler(this.btCarrito_Click);
@@ -148,7 +148,6 @@
             this.DGV.RowTemplate.Height = 24;
             this.DGV.Size = new System.Drawing.Size(464, 162);
             this.DGV.TabIndex = 10;
-            
             // 
             // Form1
             // 
@@ -169,7 +168,6 @@
             this.Controls.Add(this.btAgregar);
             this.Name = "Form1";
             this.Text = "Form1";
-            
             ((System.ComponentModel.ISupportInitialize)(this.DGV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
